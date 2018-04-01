@@ -16,9 +16,9 @@ export default class MapContainer extends React.Component {
       const node = ReactDOM.findDOMNode(mapRef);
 
       const mapConfig = Object.assign({}, {
-        center: {lat: 33.683128, lng: -117.757889}, // sets center of google map to NYC.
-        zoom: 11, // sets zoom. Lower numbers are zoomed further out.
-        mapTypeId: 'roadmap' // optional main map layer. Terrain, satellite, hybrid or roadmap--if unspecified, defaults to roadmap.
+        center: {lat: 33.683128, lng: -117.757889}, 
+        zoom: 11,
+        mapTypeId: 'roadmap' 
       })
 
       this.map = new maps.Map(node, mapConfig);
@@ -29,9 +29,9 @@ export default class MapContainer extends React.Component {
 
   render() {
 
-    const style = { // MUST specify dimensions of the Google map or it will not work. Also works best when style is specified inside the render function and created as an object
-      width: '90vw', // 90vw basically means take up 90% of the width screen. px also works.
-      height: '75vh' // 75vh similarly will take up roughly 75% of the height of the screen. px also works.
+    const style = { 
+      width: '50wh', 
+      height: '50vh' 
     }
 
     return (

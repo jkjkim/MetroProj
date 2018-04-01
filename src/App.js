@@ -3,17 +3,22 @@ import './App.css';
 
 import { GoogleApiWrapper } from 'google-maps-react' // Google API import
 import MapContainer from './container/MapContainer.js';
+import Menu from './component/Menu.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="Map">
-        <h3>My Google Maps Demo</h3>
-        <div id="map"></div>
+      <div>
+        <div> <Menu /> </div>
 
-        <MapContainer google = {this.props.google} />
+        <div className="Map">
+          <h3>Google Maps Demo</h3>
+          <div id="map"></div>
+
+          <MapContainer google = {this.props.google} />
+        </div> 
       </div>
-    );
+    )
   }
 }
 
