@@ -26,3 +26,21 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.loadingScreen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.3);
+
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingScreen.active {
+  display: flex;
+}
